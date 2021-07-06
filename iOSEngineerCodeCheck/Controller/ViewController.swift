@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import SwiftyJSON
+import SDWebImage
+import Alamofire
+
 
 class ViewController: UITableViewController, UISearchBarDelegate {
 
@@ -36,19 +40,24 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         task?.cancel()
     }
     
+    //検索ボタン押下時の呼び出しメソッド
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         word = searchBar.text!
+        //print(word)
         
         if word.count != 0 {
             url = "https://api.github.com/search/repositories?q=\(word!)"
+            //print(url)
             task = URLSession.shared.dataTask(with: URL(string: url)!) { (data, res, err) in
                 if let obj = try! JSONSerialization.jsonObject(with: data!) as? [String: Any] {
                     if let items = obj["items"] as? [[String: Any]] {
+                        //print(items)
                     self.repo = items
                         DispatchQueue.main.async {
                             self.tableView.reloadData()
                         }
+                        
                     }
                 }
             }

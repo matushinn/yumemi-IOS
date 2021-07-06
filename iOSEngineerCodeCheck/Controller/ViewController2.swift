@@ -28,11 +28,17 @@ class ViewController2: UIViewController {
         
         let repo = vc1.repo[vc1.idx]
         
+        print(repo)
+        
+                let issues_count = repo["open_issues_count"] as? Int ?? 0
+        
+        print(issues_count)
+        
         LangLbl.text = "Written in \(repo["language"] as? String ?? "")"
         StrsLbl.text = "\(repo["stargazers_count"] as? Int ?? 0) stars"
         WchsLbl.text = "\(repo["wachers_count"] as? Int ?? 0) watchers"
         FrksLbl.text = "\(repo["forks_count"] as? Int ?? 0) forks"
-        IsssLbl.text = "\(repo["open_issues_count"] as? Int ?? 0) open issues"
+        IsssLbl.text = String(issues_count) + " open issues"
         getImage()
         
     }
