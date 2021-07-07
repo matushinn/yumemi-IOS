@@ -4,11 +4,10 @@
 target 'iOSEngineerCodeCheck' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'Alamofire'
-  pod 'SwiftyJSON'
-  pod 'SDWebImage'
-
+  
   # Pods for iOSEngineerCodeCheck
+  pod 'APIKit', '~> 5.0'
+  pod 'Nuke'
 
   target 'iOSEngineerCodeCheckTests' do
     inherit! :search_paths

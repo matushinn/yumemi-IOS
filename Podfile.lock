@@ -1,26 +1,20 @@
 PODS:
-  - Alamofire (5.4.3)
-  - SDWebImage (5.11.1):
-    - SDWebImage/Core (= 5.11.1)
-  - SDWebImage/Core (5.11.1)
-  - SwiftyJSON (5.0.1)
+  - APIKit (5.2.0)
+  - Nuke (9.5.0)
 
 DEPENDENCIES:
-  - Alamofire
-  - SDWebImage
-  - SwiftyJSON
+  - APIKit (~> 5.0)
+  - Nuke
 
 SPEC REPOS:
   trunk:
-    - Alamofire
-    - SDWebImage
-    - SwiftyJSON
+    - APIKit
+    - Nuke
 
 SPEC CHECKSUMS:
-  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
-  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
-  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  APIKit: 577bd933169bd289ad6a3fa77a62394eae761619
+  Nuke: 6f400a4ea957e09149ec335a3c6acdcc814d89e4
 
-PODFILE CHECKSUM: 15189c04894bd5990c50aebae7bacf25d17c0c3c
+PODFILE CHECKSUM: 93247c0b5d1431a0a87c736ec3a41d1130883d58
 
 COCOAPODS: 1.10.1
