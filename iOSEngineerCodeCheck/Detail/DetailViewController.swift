@@ -8,23 +8,29 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController,StoryboardInstantiatable,Injectable {
 
+    @IBOutlet weak var profileImageView: UIImageView!
+    
+    @IBOutlet weak var forksCountLabel: UILabel!
+    @IBOutlet weak var issuesCountLabel: UILabel!
+    
+    //var item: Item!
+/*
+    func inject(_ dependency: Item) {
+            self.item = dependency
+    }
+
+ */
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //configure(item: item)
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
