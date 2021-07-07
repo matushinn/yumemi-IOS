@@ -12,6 +12,7 @@ import SDWebImage
 import Alamofire
 
 
+
 class ViewController: UITableViewController, UISearchBarDelegate {
 
     @IBOutlet weak var SchBr: UISearchBar!
@@ -26,7 +27,7 @@ class ViewController: UITableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        SchBr.text = "GitHubのリポジトリを検索できるよー"
+        SchBr.placeholder = "GitHubのリポジトリを検索できるよー"
         SchBr.delegate = self
     }
     
@@ -49,6 +50,28 @@ class ViewController: UITableViewController, UISearchBarDelegate {
         if word.count != 0 {
             url = "https://api.github.com/search/repositories?q=\(word!)"
             //print(url)
+            
+            
+            AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default).responseJSON { (response) in
+                switch response.result{
+               
+                case .success(_):
+                    let json:JSON = JSON(response.data as Any)
+                    if let items = json["items"] as? [[String: Any]] {
+                        //print(items)
+                    self.repo = items
+                        DispatchQueue.main.async {
+                            self.tableView.reloadData()
+                        }
+                        
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+                
+                
+            }
+            /*
             task = URLSession.shared.dataTask(with: URL(string: url)!) { (data, res, err) in
                 if let obj = try! JSONSerialization.jsonObject(with: data!) as? [String: Any] {
                     if let items = obj["items"] as? [[String: Any]] {
@@ -61,8 +84,10 @@ class ViewController: UITableViewController, UISearchBarDelegate {
                     }
                 }
             }
+            
         // これ呼ばなきゃリストが更新されません
         task?.resume()
+            */
         }
         
     }
