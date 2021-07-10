@@ -21,8 +21,6 @@
 		3704ADFA2695919400D6268E /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3704ADF92695919400D6268E /* Owner.swift */; };
 		3704ADFE2695949F00D6268E /* SearchViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3704ADFD2695949F00D6268E /* SearchViewPresenter.swift */; };
 		3704AE00269594CC00D6268E /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3704ADFF269594CC00D6268E /* SearchModel.swift */; };
-		3704AE0F269598DA00D6268E /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3704AE0D269598DA00D6268E /* RepositoryCell.swift */; };
-		3704AE10269598DA00D6268E /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3704AE0E269598DA00D6268E /* RepositoryCell.xib */; };
 		3704AE132695998500D6268E /* CellReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3704AE122695998500D6268E /* CellReusable.swift */; };
 		3704AE1626959A2600D6268E /* UIImageView+SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3704AE1526959A2600D6268E /* UIImageView+SFSymbols.swift */; };
 		3704AE1826959B6B00D6268E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3704AE1726959B6B00D6268E /* DetailView.swift */; };
@@ -31,6 +29,8 @@
 		3704AE202695A2F900D6268E /* GitHubLanguageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3704AE1F2695A2F900D6268E /* GitHubLanguageColor.swift */; };
 		3704AE222695A33600D6268E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3704AE212695A33600D6268E /* UIColor.swift */; };
 		3704AE242695A37500D6268E /* GitHubLanguageColorsのコピー.json in Resources */ = {isa = PBXBuildFile; fileRef = 3704AE232695A37500D6268E /* GitHubLanguageColorsのコピー.json */; };
+		370563CC26998C2F00D71F05 /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370563CA26998C2F00D71F05 /* RepositoryCell.swift */; };
+		370563CD26998C2F00D71F05 /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 370563CB26998C2F00D71F05 /* RepositoryCell.xib */; };
 		68F8F24879BDD075329D4BB5 /* Pods_iOSEngineerCodeCheckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9985234315D649906499A4 /* Pods_iOSEngineerCodeCheckTests.framework */; };
 		6F5B7AC2F578928625FED895 /* Pods_iOSEngineerCodeCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1CA0D6384338679C1CA1348 /* Pods_iOSEngineerCodeCheck.framework */; };
 		BFD945DF244DC5E80012785A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD945DE244DC5E80012785A /* AppDelegate.swift */; };
@@ -76,8 +76,6 @@
 		3704ADF92695919400D6268E /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		3704ADFD2695949F00D6268E /* SearchViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewPresenter.swift; sourceTree = "<group>"; };
 		3704ADFF269594CC00D6268E /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
-		3704AE0D269598DA00D6268E /* RepositoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
-		3704AE0E269598DA00D6268E /* RepositoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
 		3704AE122695998500D6268E /* CellReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReusable.swift; sourceTree = "<group>"; };
 		3704AE1526959A2600D6268E /* UIImageView+SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SFSymbols.swift"; sourceTree = "<group>"; };
 		3704AE1726959B6B00D6268E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -86,6 +84,8 @@
 		3704AE1F2695A2F900D6268E /* GitHubLanguageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubLanguageColor.swift; sourceTree = "<group>"; };
 		3704AE212695A33600D6268E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		3704AE232695A37500D6268E /* GitHubLanguageColorsのコピー.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "GitHubLanguageColorsのコピー.json"; path = "../../../Downloads/mihon-ios-engineer-codecheck/iOSEngineerCodeCheck/Resources/GitHubLanguageColorsのコピー.json"; sourceTree = "<group>"; };
+		370563CA26998C2F00D71F05 /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RepositoryCell.swift; path = ../../../../../../../Documents/RepositoryCell.swift; sourceTree = "<group>"; };
+		370563CB26998C2F00D71F05 /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RepositoryCell.xib; path = ../../../../../../../Documents/RepositoryCell.xib; sourceTree = "<group>"; };
 		425A7C9734FBBBE685FF6C6E /* Pods_iOSEngineerCodeCheck_iOSEngineerCodeCheckUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSEngineerCodeCheck_iOSEngineerCodeCheckUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		486BBF3AD0476A3580190B07 /* Pods-iOSEngineerCodeCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSEngineerCodeCheck.release.xcconfig"; path = "Target Support Files/Pods-iOSEngineerCodeCheck/Pods-iOSEngineerCodeCheck.release.xcconfig"; sourceTree = "<group>"; };
 		7A56F9B64D2BE1051CA9BB65 /* Pods-iOSEngineerCodeCheck-iOSEngineerCodeCheckUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSEngineerCodeCheck-iOSEngineerCodeCheckUITests.release.xcconfig"; path = "Target Support Files/Pods-iOSEngineerCodeCheck-iOSEngineerCodeCheckUITests/Pods-iOSEngineerCodeCheck-iOSEngineerCodeCheckUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,8 +198,8 @@
 		3704AE0C269598DA00D6268E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				3704AE0D269598DA00D6268E /* RepositoryCell.swift */,
-				3704AE0E269598DA00D6268E /* RepositoryCell.xib */,
+				370563CA26998C2F00D71F05 /* RepositoryCell.swift */,
+				370563CB26998C2F00D71F05 /* RepositoryCell.xib */,
 			);
 			name = Cells;
 			path = "../../../../Downloads/mihon-ios-engineer-codecheck/iOSEngineerCodeCheck/Sources/Views/Search/Cells";
@@ -427,8 +427,8 @@
 				BFD945EB244DC5EB0012785A /* LaunchScreen.storyboard in Resources */,
 				BFD945E8244DC5EB0012785A /* Assets.xcassets in Resources */,
 				3704AE242695A37500D6268E /* GitHubLanguageColorsのコピー.json in Resources */,
+				370563CD26998C2F00D71F05 /* RepositoryCell.xib in Resources */,
 				3704ADE926954D0D00D6268E /* DetailViewController.storyboard in Resources */,
-				3704AE10269598DA00D6268E /* RepositoryCell.xib in Resources */,
 				3704ADD52695462200D6268E /* SearchViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,12 +591,12 @@
 				3704ADE52695491F00D6268E /* Injectable.swift in Sources */,
 				3704AE132695998500D6268E /* CellReusable.swift in Sources */,
 				3704ADF126958A8500D6268E /* GitHubAPI.swift in Sources */,
+				370563CC26998C2F00D71F05 /* RepositoryCell.swift in Sources */,
 				3704ADE32695490E00D6268E /* ClassName.swift in Sources */,
 				3704AE1626959A2600D6268E /* UIImageView+SFSymbols.swift in Sources */,
 				3704AE1826959B6B00D6268E /* DetailView.swift in Sources */,
 				3704ADF82695916D00D6268E /* Repository.swift in Sources */,
 				3704AE1B26959BE900D6268E /* RemoteImageView.swift in Sources */,
-				3704AE0F269598DA00D6268E /* RepositoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
