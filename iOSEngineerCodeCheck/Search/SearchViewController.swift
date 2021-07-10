@@ -100,6 +100,7 @@ extension SearchViewController: UISearchBarDelegate {
         return true
     }
     
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         presenter.textDidChange()
     }
